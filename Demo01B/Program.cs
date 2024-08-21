@@ -10,12 +10,12 @@ namespace Demo01B
     {
         static void Main(string[] args)
         {
-
+            /*
             //Para crear un objeto NombreClase NombreInstancia = new NombreClase
             Persona persona = new Persona();
             //Para dar valores:
             persona.Nombres = "Delvin Onil";
-            persona.Apellidos = "Larez Mauricio";
+            persona.Apellidos = "Larez Mauricioo";
 
             persona.AsignarNombresCompletos();
 
@@ -29,16 +29,43 @@ namespace Demo01B
 
 
             Console.WriteLine(persona.NombresCompletos);
-           Triangulo triangulo = new Triangulo();
+
+
+            Estudiante estudiante = new Estudiante
+            {
+                Nombres = "Dave",
+                Apellidos = "Larez",
+                Edad = 21,
+                Nota = 20
+            };
+
+            Profesor profe = new Profesor();
+
+
+
+
+            Triangulo triangulo = new Triangulo();
             triangulo.Altura = 5;
             triangulo.Base = 6;
-            triangulo.CalcularArea();
-            Console.WriteLine(triangulo.CalcularArea());
+            triangulo.CalcularAreaViejo();
+            Console.WriteLine(triangulo.CalcularAreaViejo());
 
 
 
 
-            Console.WriteLine("Hola Mundo");
+            Console.WriteLine("Hola Mundo");*/
+
+            Triangulo triangulo = new Triangulo(1,2,3,4,5,6);
+            triangulo.CalcularLados();
+            Console.WriteLine($"Distancia a: {triangulo.a}");
+            Console.WriteLine($"Distancia b: {triangulo.b}");
+            Console.WriteLine($"Distancia c: {triangulo.c}");
+
+        
+            Console.WriteLine($"Perimetro s: {triangulo.perimetro}");
+            Console.WriteLine($"Area s: {triangulo.area}");
+
+       
             Console.Read(); //Este permite mantener la consola abierta, sin este no abre la consola
         }
     }

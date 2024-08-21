@@ -9,7 +9,9 @@ namespace Demo01B
     public class Persona
     {
         //Constructores
-        public Persona() { }
+        public Persona() { 
+        }
+     
         public Persona(string nombres, string apellidos)
         {
             Nombres = nombres;
